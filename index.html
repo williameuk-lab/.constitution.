@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ข้อกฎหมาย</title>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="top"><span class="dot"></span><code>SYSTEM ONLINE</code><span class="sl">/</span><span id="topT"></span>
+  <button class="login" id="loginBtn" type="button"><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M217.9 105.9 340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9-18.7 0-33.9-15.2-33.9-33.9v-62.1H32c-17.7 0-32-14.3-32-32v-64c0-17.7 14.3-32 32-32h128v-62.1c0-18.7 15.2-33.9 33.9-33.9 9 0 17.6 3.6 24 9.9zM352 416h64c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32h-64c-17.7 0-32-14.3-32-32s14.3-32 32-32h64c53 0 96 43 96 96v256c0 53-43 96-96 96h-64c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg><span id="loginT">เข้าสู่ระบบ</span></button></div>
+<section class="hero">
+  <img id="logo" src="assets/logo.png" alt="ตราสัญลักษณ์">
+  <h1 id="siteT"></h1>
+  <p id="siteS"></p>
+</section>
+<nav class="nav"><span class="t">⚖ <span id="navT"></span></span><button class="btn" id="editBtn" style="display:none">⚙ ตั้งค่า / แก้ไข</button></nav>
+<div class="crumb"><span class="home" onclick="scrollTo({top:0,behavior:'smooth'})"><svg viewBox="0 0 576 512" aria-hidden="true"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1v16.2c0 22.1-17.9 40-40 40h-16c-1.1 0-2.2 0-3.3-.1-1.4.1-2.8.1-4.2.1H392c-22.1 0-40-17.9-40-40v-120c0-17.7-14.3-32-32-32h-64c-17.7 0-32 14.3-32 32v120c0 22.1-17.9 40-40 40h-55.9c-1.5 0-3-.1-4.5-.2-1.2.1-2.4.2-3.6.2h-16c-22.1 0-40-17.9-40-40V360c0-.4 0-.9 0-1.3V287.6H32c-18 0-32-14-32-32.1 0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>หน้าแรก</span><span>/</span><span id="crumbT"></span></div>
+<div class="pills" id="pills"></div>
+<div class="search"><div class="sbox">
+  <input type="search" id="q" placeholder="ค้นหามาตรา หรือคำ ในกฎหมายทุกฉบับ...">
+  <button id="go">ค้นหา</button>
+</div></div>
+<main id="main"></main>
+<div id="toast"></div>
+<script type="module" src="script.js"></script>
+</body>
+</html>
